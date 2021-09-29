@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+/*------------main header-------------*/
+
+header{
+    
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   padding-top: 30px;
+  
+
+}
+.imgheader{
+    width: 150px;
+}
+.logo1{
+  
+   
+    width: 30%;
+    padding-right: 30px;
+
+}
+
+ .nav-a{
+    width: 70%;
+    height: 100px;
+
+  text-align: center; 
+
+
+}
+ a{
+     
+padding: 10px;
+
+    text-decoration: none;
+    
+transition: all 0.3s;
+color: #0c1753;
+}
+a:hover {
+     opacity: 1;
+     background-color: thistle;
+border-radius: 13px;
+padding: 5px;
+opacity: 0.9;
+ }
+ 
+/*-------------- midlle----------------*/
+.middle{
+    height:400px ;
+    width:100%;
+    background:linear-gradient( rgb(119, 109, 129) ,#9375ff);
+display: grid;
+grid-template-areas: "mymlift mymright "  ;
+grid-template-columns: 4fr 4fr;
+   
+
+}
+.middle-right{
+width: 40%;
+    grid-area:mymright;
+   margin-top: -100px;
+}
+
+.middle-img {
+width: 600px;
+height: 600px;
+
+ 
+
+}
+
+
+
+.middle-left{
+    width: 40%;
+padding-left: 100px ;
+padding-top: 35px;
+    grid-area: mymlift; 
+   color: white;
+   margin: 70px 0 35px 120px;
+   
+   
+}
+
+.button-middle{
+    all:unset;
+    background-color: #ffe101;
+    color: #00a69c;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 8px 40px;
+  margin: 50px;
+  transition: all 0.3s;
+
+}
+.button-middle:hover{
+    padding: 5px 20px;
+    font-size: 30px;
+}
+.middle-left h1 {
+ display: inline-block;
+ width:300px;
+ height:100px;
+}
+/*------------------main content------------------*/
+
+.main-p{
+    text-align: center;
+    color: #00a69c;
+    margin: 35px 0;
+   
+
+}
+.card{
+    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-areas:  " myuxui myfrontend mysupport";
+    grid-template-columns: -2fr 2fr 2fr;
+background-color: rgb(246, 244, 247);
+width: 100%;
+height: 50%;
+text-align: center;
+}
+
+.ux-ui {
+    
+grid-area: myuxui;
+border: 2px solid white;
+width: 200px;
+height: 200px;
+margin: 30px 0 30px 30px;
+box-shadow: 2px  5px 5px 2px gray;
+background-color: white;
+
+
+ 
+
+}
+.frontend {
+    grid-area: myfrontend;
+    border: 2px solid white;
+width: 200px;
+height: 200px;
+margin: 30px 0 30px 30px;
+box-shadow: 2px  5px 5px 2px gray;
+background-color: white;
+
+    
+}
+
+.support {
+    grid-area: mysupport;
+    border: 2px solid white;
+    box-shadow: 2px  5px 5px 2px gray;
+width: 200px;
+height: 200px;
+margin: 30px 0 30px 30px;
+background-color: white;
+
+   
+}
+
+ .card img {
+ width: 100px;
+    background-color: #fee552;
+    
+   border-radius: 50px;
+   margin-top: 10px;
+   margin-bottom: 15px;
+   text-align: center;
+
+}
+
+/*---------------------------main details--------------------*/
+.main-details{
+    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+grid-template-areas:  " myleft  . myright "
+" myleft  . myright "
+" myleft  . myright ";
+grid-template-columns: 2fr  1fr 2fr;
+grid-template-rows: 2fr  1fr 2fr;
+}
+.left-d{
+   
+    grid-area: myleft;
+    margin-top: 70px;
+   
+}
+.right-d{
+
+    grid-area: myright;
+    margin-top: 70px;
+    margin-left: 300px;
+   
+  
+}
+
+.pdd{
+    line-height: 2;
+    opacity: 0.6;
+    font-size: 15px;
+}
+h4{
+    line-height: 2;
+    opacity: 0.6;
+    font-size: 15px;
+}
+.h1d{
+   color: #00a69c; 
+   font-size: 20px ;
+}
+.imgleft1 {
+    
+   width: 300px;
+    margin-top:-70px;
+}
+.pargragh1 {
+    border: 2px solid red;
+  margin-bottom: -40px;  
+}
+
+/*--------------------------contact-----------------------*/
+
+.contact{
+    width: 100%;
+    height: 70%;
+    margin-top: 40px ;
+    padding-bottom: 40px;
+    display: grid;
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-areas: "myleftcontact myrightcontact";
+    grid-template-rows: 4fr 4fr;
+    background-color: #0c1753;
+    margin-bottom: 100px;
+    color: white;
+
+}
+
+.leftcontact {
+    grid-area: myleftcontact;
+    margin-left: 40px;
+    margin-top: 40px;
+  
+
+
+}
+.h2cont{
+
+margin-top: 40px;
+margin-left: 40px;
+font-size:30px ;
+height: 200px ;
+width: 200px;
+
+
+}
+
+
+.rightcontact {
+    grid-area: myrightcontact;
+    padding-left:  40px ;
+
+}
+
+.pright{
+margin: 20px 40px 10px 40px ;
+
+}
+
+input{
+   margin-left:  20px;
+   margin-bottom: 10px;
+   padding: 10px;
+    border-radius: 5px;
+}
+.num , .city{
+    all:unset;
+    background-color: white;
+   width: 200px;
+   border-radius: 8px;
+   margin: 10px;
+   padding: 10px;
+   color: black;
+   
+ 
+}
+.emil , .subject {
+    all:unset;
+    background-color: white;
+width: 450px;
+border-radius: 8px;
+margin: 10px;
+padding: 10px;
+color: black;
+   
+  
+}
+.massage{
+    all:unset;
+    background-color: white;
+    width: 450px;
+    height: 100px;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+   
+    
+
+}
+.submit{
+    all:unset;
+    background-color: #ffe101;
+    width: 450px;
+    margin: 10px;
+    padding: 10px; 
+    color: black;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+   
+
+}
+
+/*------------------------------sidebar-----------------------*/
+
+  .sidebar {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "myimg mysidebar2 mysidebar3  mysidebar4";
+  }
+
+.imgsidebar{
+    grid-area: myimg;
+    width:200px;
+    text-align: center;
+    margin: 0 10px 0 45px ;
+    
+
+}
+
+.sidebar2{
+    grid-area: mysidebar2;
+    text-align: center;
+
+    color:#0c1753
+}
+
+
+.sidebar3{
+    grid-area: mysidebar3;
+    text-align: center;
+    color:#0c1753
+}
+.sidebar4{
+    grid-area: mysidebar4; 
+    text-align: center;
+    color:#0c1753
+}
+
+
+/*-----------------footer--------------------*/
+
+.footer{
+    display: inline-block;
+    width: 100%;
+    padding: 20px 10px ;
+    background:linear-gradient( rgb(119, 109, 129) ,#9375ff);
+    color: white;
+    text-align: center;
+   
+}
+.develop{
+    color:  #0c1753;
+}
+  
+/*----------------responsive-----------------*/
+
+@media screen and (max-width:800px){
+
+     .logo1{
+         width: 20%;
+         padding-right: 30px;
+         
+     
+     }
+    .imgheader{
+        padding-top: 30px;
+        width: 90px;
+    }
+     
+      .nav-a{
+          display: block;
+         width: 40%;
+margin-right: 50px;
+     
+     
+     }
+     .nav-1 , .nav-2 , .nav-3{
+         display: block;
+         font-size: 10px;
+        
+   
+     }
+      a{
+          width: 20%;
+         text-decoration: none;
+         
+     transition: all 0.3s;
+     color: #0c1753;
+     }
+     a:hover {
+          opacity: 1;
+          background-color: thistle;
+     opacity: 0.9;
+      }
+
+}
